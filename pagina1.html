@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Servidor</title>
+<style>
+    body { font-family: Arial; text-align: center; padding-top: 90px; background: #e8e8e8; }
+    button {
+        padding: 18px 45px;
+        background: #ff5722;
+        border: none;
+        border-radius: 12px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<button onclick="abrir()">Abrir servidor privado de RoboPresos</button>
+
+<script>
+const servers = [
+    "https://www.roblox.com/share?code=3d317fc9027f6447bc0103151aca65c3&type=Server",
+    "https://www.roblox.com/share?code=aa7fe5eb061d024eaf954cfe32610af6&type=Server"
+];
+
+function abrir(){
+    let random = servers[Math.floor(Math.random() * servers.length)];
+    window.location.href = random;
+}
+</script>
+
+</body>
+</html>
